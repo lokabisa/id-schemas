@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lokabisa.id/business/status.schema.json",
+  "title": "Business Operational Status",
+  "description": "Current operational status of a business (open / closed / unknown)",
+  "type": "object",
+  "properties": {
+    "state": {
+      "type": "string",
+      "enum": ["open", "closed", "unknown"],
+      "description": "Current business operational state"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO timestamp of last status update"
+    },
+    "source": {
+      "type": "string",
+      "enum": ["manual", "system", "bot"],
+      "description": "Source of the status update"
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Optional human-readable status notes"
+    }
+  },
+  "additionalProperties": false
+}
