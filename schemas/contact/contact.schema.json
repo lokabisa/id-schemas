@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lokabisa.id/contact/contact.schema.json",
+  "title": "Business Contact Channels",
+  "description": "Primary contact channels for Indonesian local businesses (WhatsApp-first)",
+  "type": "object",
+  "properties": {
+    "whatsapp": {
+      "type": "string",
+      "description": "WhatsApp number in international format (e.g. 628xxxx)"
+    },
+    "phone": {
+      "type": ["string", "null"],
+      "description": "Alternative phone number"
+    },
+    "email": {
+      "type": ["string", "null"],
+      "format": "email",
+      "description": "Business email address, if any"
+    },
+    "instagram": {
+      "type": ["string", "null"],
+      "description": "Instagram handle or URL"
+    },
+    "website": {
+      "type": ["string", "null"],
+      "format": "uri",
+      "description": "Official website URL"
+    }
+  },
+  "additionalProperties": false
+}
