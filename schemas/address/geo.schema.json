@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lokabisa.id/address/geo.schema.json",
+  "title": "Geographic Coordinates",
+  "description": "Geographic point representation using latitude and longitude",
+  "type": "object",
+  "required": ["lat", "lng"],
+  "properties": {
+    "lat": {
+      "type": "number",
+      "minimum": -90,
+      "maximum": 90,
+      "description": "Latitude in decimal degrees"
+    },
+    "lng": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 180,
+      "description": "Longitude in decimal degrees"
+    }
+  },
+  "additionalProperties": false
+}
