@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lokabisa.id/address/address.schema.json",
+  "title": "Indonesian Address",
+  "description": "Address schema adapted to Indonesian administrative structure",
+  "type": "object",
+  "properties": {
+    "street": {
+      "type": "string",
+      "description": "Street name and house number"
+    },
+    "rt": {
+      "type": "string",
+      "description": "Neighborhood unit (RT)"
+    },
+    "rw": {
+      "type": "string",
+      "description": "Community unit (RW)"
+    },
+    "kelurahan": {
+      "type": "string",
+      "description": "Kelurahan or desa"
+    },
+    "kecamatan": {
+      "type": "string",
+      "description": "Kecamatan"
+    },
+    "city": {
+      "type": "string",
+      "description": "City or regency"
+    },
+    "province": {
+      "type": "string",
+      "description": "Province"
+    },
+    "postal_code": {
+      "type": "string",
+      "description": "Postal code"
+    }
+  },
+  "additionalProperties": false
+}
