@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lokabisa.id/business/profile.schema.json",
+  "title": "Indonesian Business Profile",
+  "description": "Core identity schema for Indonesian local businesses",
+  "type": "object",
+  "required": ["business_name", "category"],
+  "properties": {
+    "business_name": {
+      "type": "string",
+      "description": "Public-facing business name"
+    },
+    "legal_name": {
+      "type": ["string", "null"],
+      "description": "Registered legal name, if any"
+    },
+    "category": {
+      "type": "string",
+      "description": "Primary business category"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Optional descriptive tags"
+    }
+  },
+  "additionalProperties": false
+}
