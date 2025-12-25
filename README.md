@@ -1,3 +1,6 @@
+[![Version](https://img.shields.io/github/v/release/lokabisa/id-schemas)](https://github.com/lokabisa/id-schemas/releases)
+[![License](https://img.shields.io/github/license/lokabisa/id-schemas)](LICENSE)
+
 # id-schemas
 
 A collection of open, lightweight JSON Schemas
