@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.lokabisa.id/place/place.schema.json",
+  "title": "Place",
+  "description": "Composite schema representing a physical place with minimal operational information, composed from Lokabisa base schemas.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the place"
+    },
+    "address": {
+      "$ref": "../address/address.schema.json",
+      "description": "Physical address of the place"
+    },
+    "geo": {
+      "$ref": "../address/geo.schema.json",
+      "description": "Geographic coordinates of the place"
+    },
+    "hours": {
+      "$ref": "../business/hours.schema.json",
+      "description": "Opening hours information"
+    },
+    "status": {
+      "$ref": "../business/status.schema.json",
+      "description": "Operational status of the place"
+    },
+    "contact": {
+      "$ref": "../contact/contact.schema.json",
+      "description": "Contact information for the place"
+    }
+  },
+  "required": ["name"],
+  "additionalProperties": false
+}
