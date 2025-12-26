@@ -62,8 +62,11 @@ schemas/
 │ └── geo.schema.json
 └── contact/
 └── contact.schema.json
+└── place/
+  └── place.schema.json
 
 examples/
+├── place-warung.json
 └── warung-lengkap.json
 ```
 
@@ -85,6 +88,13 @@ Example use cases:
 - data normalization pipelines
 
 See the `examples/` directory for a complete business example.
+
+The `examples/` directory includes two levels of examples.
+`place-warung.json` demonstrates a minimal composition using the `place`
+schema, focusing on physical location and basic operational data.
+`warung-lengkap.json` represents a higher-level application example that
+combines business identity, address, contact, hours, and status into a
+complete business profile.
 
 ---
 
