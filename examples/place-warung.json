@@ -1,0 +1,36 @@
+{
+  "name": "Warung Bu Sari",
+  "address": {
+    "street": "Jl. Melati No. 3",
+    "rt": "02",
+    "rw": "05",
+    "kelurahan": "Kesambi",
+    "kecamatan": "Kesambi",
+    "city": "Cirebon",
+    "province": "Jawa Barat",
+    "postal_code": "45133",
+    "country": "ID"
+  },
+  "geo": {
+    "lat": -6.7321,
+    "lng": 108.5523
+  },
+  "hours": {
+    "timezone": "Asia/Jakarta",
+    "weekly": {
+      "mon": ["08:00-16:00"],
+      "tue": ["08:00-16:00"],
+      "wed": ["08:00-16:00"],
+      "thu": ["08:00-16:00"],
+      "fri": ["08:00-11:30", "13:00-16:00"],
+      "sat": ["08:00-14:00"],
+      "sun": []
+    }
+  },
+  "status": {
+    "state": "open"
+  },
+  "contact": {
+    "whatsapp": "628123456789"
+  }
+}
